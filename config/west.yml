@@ -8,7 +8,7 @@ manifest:
       url-base: https://github.com/dktpham
   projects:
     - name: zmk
-      remote: dktpham
+      remote: infused-kim
       revision: sofle
       import: app/west.yml
   self:
