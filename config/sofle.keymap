@@ -50,6 +50,26 @@
             bindings = <&kp RA(P)>;
             key-positions = <21 22>;
         };
+
+        f13 {
+            bindings = <&kp F13>;
+            key-positions = <13 14>;
+        };
+
+        f14 {
+            bindings = <&kp F14>;
+            key-positions = <14 15>;
+        };
+
+        f15 {
+            bindings = <&kp F15>;
+            key-positions = <15 16>;
+        };
+
+        f16 {
+            bindings = <&kp F16>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
