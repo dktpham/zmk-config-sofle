@@ -91,7 +91,7 @@
                 <&macro_release>,
                 <&kp LEFT_GUI &kp LCTRL>;
         };
-        _right_desktop: _right_desktop {
+        right_desktop: right_desktop {
             compatible = "zmk,behavior-macro";
             label = "right_desktop";
             #binding-cells = <0>;
