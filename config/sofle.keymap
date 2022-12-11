@@ -156,11 +156,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
- &trans           &trans         &trans       &trans       &trans    &trans                  &trans    &trans    &trans     &trans   &trans  &trans
- &trans          &kp INS      &kp PSCRN  &kp K_CMENU       &trans    &trans                  &trans  &kp HOME    &kp UP    &kp END   &trans  &trans
- &trans  & right_desktop  &left_desktop       &trans       &trans  &kp CLCK                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &trans
- &trans       &kp K_UNDO      &kp K_CUT   &kp K_COPY  &kp K_PASTE    &trans  &trans  &trans  &trans    &trans    &trans     &trans   &trans  &trans
-                                 &trans       &trans       &trans    &trans  &trans  &trans  &trans    &trans    &trans     &trans
+ &trans          &trans         &trans       &trans       &trans    &trans                  &trans    &trans    &trans     &trans   &trans  &trans
+ &trans         &kp INS      &kp PSCRN  &kp K_CMENU       &trans    &trans                  &trans  &kp HOME    &kp UP    &kp END   &trans  &trans
+ &trans  &right_desktop  &left_desktop       &trans       &trans  &kp CLCK                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &trans
+ &trans      &kp K_UNDO      &kp K_CUT   &kp K_COPY  &kp K_PASTE    &trans  &trans  &trans  &trans    &trans    &trans     &trans   &trans  &trans
+                                &trans       &trans       &trans    &trans  &trans  &trans  &trans    &trans    &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RA(TAB) RA(RS(TAB))>;
