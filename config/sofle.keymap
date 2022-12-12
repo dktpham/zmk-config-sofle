@@ -124,7 +124,7 @@
                     &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 ENTER     &kp F23  &kp F24  &lt 2 SPACE  &kp RCTRL   &kp RALT  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         lower_layer {
@@ -144,7 +144,7 @@
                           &trans       &trans    &trans     &trans  &trans  &trans     &trans    &trans           &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
 
         raise_layer {
@@ -156,14 +156,14 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
- &trans          &trans         &trans       &trans       &trans    &trans                  &trans    &trans    &trans     &trans   &trans  &trans
- &trans         &kp INS      &kp PSCRN  &kp K_CMENU       &trans    &trans                  &trans  &kp HOME    &kp UP    &kp END   &trans  &trans
- &trans  &right_desktop  &left_desktop       &trans       &trans  &kp CLCK                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &trans
- &trans      &kp K_UNDO      &kp K_CUT   &kp K_COPY  &kp K_PASTE    &trans  &trans  &trans  &trans    &trans    &trans     &trans   &trans  &trans
+ &trans         &trans          &trans       &trans       &trans    &trans                  &trans    &trans    &trans     &trans   &trans  &trans
+ &trans        &kp INS       &kp PSCRN  &kp K_CMENU       &trans    &trans                  &trans  &kp HOME    &kp UP    &kp END   &trans  &trans
+ &trans  &left_desktop  &right_desktop       &trans       &trans  &kp CLCK                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &trans
+ &trans     &kp K_UNDO       &kp K_CUT   &kp K_COPY  &kp K_PASTE    &trans  &trans  &trans  &trans    &trans    &trans     &trans   &trans  &trans
                                 &trans       &trans       &trans    &trans  &trans  &trans  &trans    &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RA(TAB) RA(RS(TAB))>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         // ------------------------------------------------------------------------------------------------------------
