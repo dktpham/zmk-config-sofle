@@ -90,35 +90,17 @@
     };
 
     behaviors {
-        home_row_mod_l: home_row_mod_l {
+        hm: HOMEROW_MODS {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOME_ROW_MOD_L";
+            label = "HOMEROW_MODS";
             bindings =
                 <&kp>,
                 <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <6 18 30 44 56 57 45 58 46 47 59 48 49 35 34 33 32 31 19 20 21 22 23 11 10 9 7 8>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            global-quick-tap;
-            flavor = "balanced";
-            hold-trigger-on-release;
-        };
-        home_row_mods_r: home_row_mods_r {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOME_ROW_MODS_R";
-            bindings =
-                <&kp>,
-                <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            global-quick-tap;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <56 5 17 29 41 53 52 40 28 16 4 3 2 1 0 12 13 14 15 26 27 38 39 50 51 24 25 36 37>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -134,11 +116,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-   &gresc  &kp N1                        &kp N2                          &kp N3                      &kp N4       &kp N5                            &kp N6                       &kp N7                    &kp N8                         &kp N9    &kp N0     &kp MINUS
-&kp MINUS   &kp Q                         &kp W                           &kp E                       &kp R        &kp T                             &kp Y                        &kp U                     &kp I                          &kp O     &kp P      &kp BSPC
-  &kp TAB   &kp A  &home_row_mod_l LEFT_SHIFT S  &home_row_mod_l LEFT_CONTROL D  &home_row_mod_l LEFT_ALT F        &kp G                             &kp H  &home_row_mods_r LEFT_ALT J  &home_row_mods_r LCTRL K  &home_row_mods_r LEFT_SHIFT L  &kp SEMI  &quote_space
-&kp LSHFT   &kp Z                         &kp X                           &kp C                       &kp V        &kp B  &kp C_MUTE    &none        &kp N                        &kp M                 &kp COMMA                        &kp DOT  &kp FSLH     &kp RSHFT
-                                       &kp LGUI                        &kp LALT                   &kp LCTRL  &lt 1 ENTER     &kp F23  &kp F24  &lt 2 SPACE                    &kp RCTRL                  &kp RALT                       &kp RGUI
+   &gresc  &kp N1            &kp N2       &kp N3          &kp N4       &kp N5                            &kp N6          &kp N7       &kp N8        &kp N9    &kp N0     &kp MINUS
+&kp MINUS   &kp Q             &kp W        &kp E           &kp R        &kp T                             &kp Y           &kp U        &kp I         &kp O     &kp P      &kp BSPC
+  &kp TAB   &kp A  &hm LEFT_SHIFT S  &hm LCTRL D  &hm LEFT_ALT F        &kp G                             &kp H  &hm LEFT_ALT J  &hm LCTRL K  &hm LSHIFT L  &kp SEMI  &quote_space
+&kp LSHFT   &kp Z             &kp X        &kp C           &kp V        &kp B  &kp C_MUTE    &none        &kp N           &kp M    &kp COMMA       &kp DOT  &kp FSLH     &kp RSHFT
+                           &kp LGUI     &kp LALT       &kp LCTRL  &lt 1 ENTER     &kp F23  &kp F24  &lt 2 SPACE       &kp RCTRL     &kp RALT      &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RA(TAB) RA(RS(TAB))>;
